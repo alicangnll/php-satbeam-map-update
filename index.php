@@ -69,7 +69,7 @@ if(empty(htmlspecialchars($_GET["kml"]))) {
   $mydir = '.'; 
   
   $myfiles = array_diff(scandir($mydir), array('.', '..')); 
-  $var_olan  = array(".php", "son", "L.KML.js", "get", "leaflet", ".sql");
+  $var_olan  = array(".php", "son", "L.KML.js", "get", "leaflet", ".sql", ".png", ".zip");
   $data = str_replace($var_olan, '', $myfiles);
   foreach($data as $filename){
 	if(is_file($filename)){
